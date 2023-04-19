@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'stack-overflow-testing'`, () => {
+  it(`should have as title 'angular-tw-elementents-experimentation'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('stack-overflow-testing');
+    expect(app.title).toEqual('angular-tw-elementents-experimentation');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('stack-overflow-testing app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-tw-elementents-experimentation app is running!');
   });
 });
